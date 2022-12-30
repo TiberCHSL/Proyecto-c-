@@ -55,11 +55,11 @@ void Backpack::use(int select){
         cout << "\n\n\n\n\n\n\n\n\nHaz usado una SUPERPOCION!" << endl;
         cout << pokemon.getName() << " se ha curado " << getsp_hp() << " de vida..." << endl;
         pokemon.setHealth(pokemon.getHealth()+getsp_hp());
-        cout << backpack.pokemon.getName() << " tiene " << backpack.pokemon.getHealth() << " de vida" << endl;
-        backpack.super_potion_n = backpack.super_potion_n - 1;
+        cout << pokemon.getName() << " tiene " << pokemon.getHealth() << " de vida" << endl;
+        super_potion_n = super_potion_n - 1;
         this_thread::sleep_for(chrono::seconds(3));
     }
-    else if ((select == 2) && (backpack.super_potion_n == 0))
+    else if ((select == 2) && (super_potion_n == 0))
     {
         cout << "\n\n\n\n\n\n\n\n\n\nNo tienes mas SUPERPOCIONES!" << endl;
         this_thread::sleep_for(chrono::seconds(3));
