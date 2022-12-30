@@ -27,7 +27,7 @@ else
 
 if (select == 1)
 {
-    return Pokemon("Charmander","Fuego",{"Ascuas","Colmillo Igneo","Lanzallamas","Pirotecnia"},{20,32,45,35},{5,3,2,3})
+    return Pokemon("Charmander","Fuego",{"Ascuas","Colmillo Igneo","Lanzallamas","Pirotecnia"},{20,32,45,35},{5,3,2,3});
 }
 else if (select == 2)
 {
